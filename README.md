@@ -180,6 +180,10 @@ Tools:
 - <a href="http://ubuntu.wsl:8080/index.php">phpMyAdmin</a>
 - <a href="http://ubuntu.wsl:9010/">Portainer</a>
 
+## Helper (example: php8)
+`
+sudo apt install php8.0-{bz2,curl,intl,mysql,readline,xml,gd,zip}
+`
 ## Testing
 ```bash
 docker ps # if you see containers running after (server-start) your process is complete.
