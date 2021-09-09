@@ -1,321 +1,188 @@
-<p align="center">
-    <img src="/.github/home-page-images/laradock-logo.jpg?raw=true" alt="Laradock Logo"/>
-</p>
-
-<p align="center">
-   <a href="http://laradock.io/contributing"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="contributions welcome"></a>
-   <a href="https://github.com/laradock/laradock/network"><img src="https://img.shields.io/github/forks/laradock/laradock.svg" alt="GitHub forks"></a>
-   <a href="https://github.com/laradock/laradock/issues"><img src="https://img.shields.io/github/issues/laradock/laradock.svg" alt="GitHub issues"></a>
-   <a href="https://github.com/laradock/laradock/stargazers"><a href="#backers" alt="sponsors on Open Collective"><img src="https://opencollective.com/laradock/backers/badge.svg" /></a> <a href="#sponsors" alt="Sponsors on Open Collective"><img src="https://opencollective.com/laradock/sponsors/badge.svg" /></a> <img src="https://img.shields.io/github/stars/laradock/laradock.svg" alt="GitHub stars"></a>
-   <a href="https://github.com/laradock/laradock/actions/workflows/main-ci.yml"><img src="https://github.com/laradock/laradock/actions/workflows/main-ci.yml/badge.svg" alt="GitHub CI"></a>
-   <a href="https://travis-ci.org/laradock/laradock"><img src="https://travis-ci.org/laradock/laradock.svg?branch=master" alt="Build status"></a>
-   <a href="https://raw.githubusercontent.com/laradock/laradock/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
-</p>
-
-<p align="center"><b>Full PHP development environment based on Docker.</b></p>
-
-<p align="center">
-    <a href="http://zalt.me"><img src="http://forthebadge.com/images/badges/built-by-developers.svg" alt="forthebadge" width="180"></a>
-</p>
-
-<br>
-<br>
-
-<h4 align="center" style="color:#7d58c2">Use Docker First - Learn About It Later!</h4>
-
-<p align="center">
-	<a href="http://laradock.io">
-	   <img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/documentation-button.png" width="300px" alt="Laradock Documentation"/>
-	</a>
-</p>
-
-
-## Join Us
-
-[![Gitter](https://badges.gitter.im/Laradock/laradock.svg)](https://gitter.im/Laradock/laradock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue)](https://gitpod.io/#https://github.com/laradock/laradock)
+# Laradock and WSL2
 
 ---
 
-
-## Awesome People
-
-Laradock is an MIT-licensed open source project with its ongoing development made possible entirely by the support of all these smart and generous people, from code contributors to financial contributors. 💜
+Dev Enviroment - Laradock running at WSL2 + XDebug
 
 
-### Project Maintainers
+### Requirements
 
-<table>
-  <tbody>
-    <tr>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/mahmoudz.png?s=150">
-            <br>
-            <strong>Mahmoud Zalt</strong>
-            <br>
-            <a href="https://github.com/Mahmoudz">@mahmoudz</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/appleboy.png?s=150">
-            <br>
-            <strong>Bo-Yi Wu</strong>
-            <br>
-            <a href="https://github.com/appleboy">@appleboy</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/philtrep.png?s=150">
-            <br>
-            <strong>Philippe Trépanier</strong>
-            <br>
-            <a href="https://github.com/philtrep">@philtrep</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/mikeerickson.png?s=150">
-            <br>
-            <strong>Mike Erickson</strong>
-            <br>
-            <a href="https://github.com/mikeerickson">@mikeerickson</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/zeroc0d3.png?s=150">
-            <br>
-            <strong>Dwi Fahni Denni</strong>
-            <br>
-            <a href="https://github.com/zeroc0d3">@zeroc0d3</a>
-        </td>
-     </tr>
-     <tr>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/thorerik.png?s=150">
-            <br>
-            <strong>Thor Erik</strong>
-            <br>
-            <a href="https://github.com/thorerik">@thorerik</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/winfried-van-loon.png?s=150">
-            <br>
-            <strong>Winfried van Loon</strong>
-            <br>
-            <a href="https://github.com/winfried-van-loon">@winfried-van-loon</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/sixlive.png?s=150">
-            <br>
-            <strong>TJ Miller</strong>
-            <br>
-            <a href="https://github.com/sixlive">@sixlive</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/bestlong.png?s=150">
-            <br>
-            <strong>Yu-Lung Shao (Allen)</strong>
-            <br>
-            <a href="https://github.com/bestlong">@bestlong</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/urukalo.png?s=150">
-            <br>
-            <strong>Milan Urukalo</strong>
-            <br>
-            <a href="https://github.com/urukalo">@urukalo</a>
-        </td>
-     </tr>
-     <tr>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/vwchu.png?s=150">
-            <br>
-            <strong>Vince Chu</strong>
-            <br>
-            <a href="https://github.com/vwchu">@vwchu</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/zuohuadong.png?s=150">
-            <br>
-            <strong>Huadong Zuo</strong>
-            <br>
-            <a href="https://github.com/zuohuadong">@zuohuadong</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/lanphan.png?s=150">
-            <br>
-            <strong>Lan Phan</strong>
-            <br>
-            <a href="https://github.com/lanphan">@lanphan</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://github.com/ahkui.png?s=150">
-            <br>
-            <strong>Ahkui</strong>
-            <br>
-            <a href="https://github.com/ahkui">@ahkui</a>
-        </td>
-        <td align="center" valign="top">
-            <img width="125" height="125" src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/join-us.png">
-            <br>
-            <strong>< Join Us ></strong>
-            <br>
-            <a href="https://github.com/laradock">@laradock</a>
-        </td>
-     </tr>
-  </tbody>
-</table>
+- Download & Install <a href="https://github.com/shayne/go-wsl2-host/releases/latest/download/wsl2host.exe">Go WSL2 Host (last release)</a>
 
-### Code Contributors
+```bash
+.\wsl2host.exe install
+```
+**Important** If you perform any windows update you must reinstall the service and reconfigure it.
 
-[![Laradock Contributors][contributors-src]][contributors-href]
+Font: https://github.com/shayne/go-wsl2-host/releases
+## Ubuntu
+Install and Configuration of Ubuntu
+```bash
+- Install Ubuntu from Windows Store
+- After install is complete, open that and fill user and password for your account
+# Command in powershell
+    ### Turn off Ubuntu ###
+    wsl --shutdown
+    ### Convert wsl into wsl2 ###
+    wsl --set-version Ubuntu 2
+    
+# After this process end you must open again and run next steps
+```
+Inside of Ubuntu
+```bash
+# Create file for service WSL2 Hosts ( This sync your domains.local into windows hosts file )
+$ nano ~/.wsl2hosts
+    # Content of file
+        host.docker.internal laradock_mysql_1 mysql ubuntu.wsl
+# Remove old instalations
+sudo apt-get remove docker docker-engine docker.io containerd runc
+# Update the source listing
+sudo apt-get update
+# Ensure that you have the binaries needed to fetch repo listing
+sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+# Fetch the repository listing from docker's site & add it
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+# Update source listing now that we've added Docker's repo
+sudo apt-get update
+# Install docker-ce
+sudo apt-get install docker-ce
+# Add your user to docker group
+sudo usermod -aG docker $USER
+# Create scripts for docker start
+sudo nano /usr/local/sbin/start_docker.sh
+    with the following contents:
+        #!/usr/bin/env bash
+        sudo cgroupfs-mount
+        sudo service docker start
+# Configure script permissions
+sudo chmod +x /usr/local/sbin/start_docker.sh
+# Lock down edit privileges
+sudo chmod 755 /usr/local/sbin/start_docker.sh
+/bin/sh /usr/local/sbin/start_docker.sh
+sudo nano /etc/sudoers
+# And add the following to the bottom of the file — making sure to put in your own username (use echo $USER if you’re unsure what it is):
+# Enable docker services to start without sudo
+<your username here> ALL=(ALL:ALL) NOPASSWD: /bin/sh /usr/local/sbin/start_docker.sh
+# Now you must Reboot your bash or run this command
+source ~/.bashrc
+# After this commands
+sudo service docker stop
+sudo nohup docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock &
+sudo service docker start
+docker run --rm hello-world
+#If you see hello world thats ok. You can verify if your docker is running using this
+    docker ps
+```
+Now we will configure folders where you go work
+```bash
+cd ~
+mkdir Workspace
+cd Workspace; git clone <url of repo with our laradock>
+# Configure your git parameters
+git config --global user.name "Your Name"
+git config --global user.email "put@youremail.there"
+# Install composer
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+# go ~/Workspace/laradock and start laradock
+cd ~/Workspace/laradock; docker-compose up -d nginx mysql phpmyadmin portainer
+This is start containers that we need. Will take some time.... 
+After, I advise you to run the following (force permissions)
+cd ~
+sudo chown -R username:www-data Workspace/
+```
+## Our Commands
+Edit your .bashrc using 
+```bash 
+$ sudo nano ~/.bashrc
+```
+Add this content at end of file
+```bash
+#laradock comands custom
+alias server-stop="cd ~/Workspace/laradock/; ./php-fpm/xdebug stop; docker-compose down"
+alias apache-start="sudo service docker start; cd ~/Workspace/laradock/; docker-compose up -d apache2 mysql phpmyadmin portainer; ./php-fpm/xdebug start"
+alias apache-restart="cd ~/Workspace/laradock/; ./php-fpm/xdebug stop; docker-compose down; docker-compose up -d apache2 mysql phpmyadmin portainer; ./php-fpm/xdebug star>
+alias nginx-start="sudo service docker start; cd ~/Workspace/laradock/; docker-compose up -d nginx mysql phpmyadmin portainer; ./php-fpm/xdebug start"
+alias nginx-restart="cd ~/Workspace/laradock/; ./php-fpm/xdebug stop; docker-compose down; docker-compose up -d nginx mysql phpmyadmin portainer; ./php-fpm/xdebug start"
+alias nginx-reload="cd ~/Workspace/laradock/; docker-compose exec nginx nginx -s reload"
+alias server-bash="docker container exec -it laradock_workspace_1 bash"
+alias cron-start="cd ~/Workspace/laradock/; docker-compose up -d php-worker"
+```
+With this commands you can start, restart and turn off containers and docker.
+```bash
+apache-start # start your containers apache environment
+nginx-start # start your containers nginx environment
+apache-restart # restart your containers apache environment
+nginx-restart # restart your containers nginx environment
+server-stop # stop all containers
+server-bash # bash of container php-fpm
+nginx-reload # when we add a new configuration file to nginx (or run nginx-restart)
+cron-start # run php-worker container
+```
+If you need can add new commands at your file .bashrc
+# Setup new Projects
+To create a project inside that structure you need create a folder inside ~/Workspace
 
-### Financial Contributors
+Example:
 
-[![Open Collective backers][backers-src]][backers-href]
+```bash
+~/Workspace/
+    laradock/
+    myproject1/
+    myproject2/
+```
+Next, you need create a conf file at nginx / apache2
+~/Workspace/laradock/nginx/sites OR ~Workspace/laradock/apache2/sites
 
-You can support us using any of the methods below:
+Add your domain into ~/.wsl2hosts ( Add new domains always at first line of file)
 
-<b>1:</b> [Open Collective](https://opencollective.com/laradock)
-<br>
-<b>2:</b> [Paypal](https://paypal.me/mzmmzz)
-<br>
-<b>3:</b> [Github Sponsors](https://github.com/sponsors/Mahmoudz)
-<br>
-<b>4:</b> [Patreon](https://www.patreon.com/zalt)
+- Reload system using 
+```bash
+server-reload
+```
 
----
+Now you can navigate with your browser http://yourdomain.local 
 
+If you have problems 
 
-## Sponsors
+#### Rebuild container images
+```bash
+cd ~/Workspace/laradock; docker-compose up --build -d mysql phpmyadmin nginx portainer
+```
+### **Notes:**
 
-Sponsoring is an act of giving in a different fashion. 🌱
+- You can change your configs at .env
+- This is configurated to work with xdebug
+- At vscode you can add this debug config (example)
 
+```bash
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9000,
+            "pathMappings": {
+                "/var/www/yourprojectfolder": "${workspaceRoot}",
+                },
+            /* "xdebugSettings": {
+                "max_data": -1
+            } */
+        }
+    ]
+}
+```
 
-### Gold Sponsors
+Tools:
+- <a href="http://ubuntu.wsl:8080/index.php">phpMyAdmin</a>
+- <a href="http://ubuntu.wsl:9010/">Portainer</a>
 
-<p align="center">
-
-<a href="https://kasynohex.com/"                      target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/PLD.png"                  height="75px"    alt="KasynoHEX.com Polska"></a>
-<a href="https://onlinecasinohex.ca/online-casinos/"  target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/CA.png"                   height="75px"    alt="Online casino list in Canada by OnlineCasinoHEX.ca"></a>
-<a href="https://aussiecasinohex.com/online-pokies/"  target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/AU.png"                   height="75px"    alt="Online pokies by AussieCasinoHEX.com"></a>
-<a href="http://apiato.io/"                           target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/apiato.png"               height="75px"    alt="Apiato Build PHP API's faster"></a>
-<a href="https://www.bestonlinecasino.com/"           target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/bestonlinecasino.jpg"     height="75px"    alt="We thank bestonlinecasino.com for their support"></a>
-<a href="https://casinopilotti.com/"                  target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/casinopilotti.png"        height="75px"    alt="CasinoPilotti"></a>
-
-
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/0/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/0/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/1/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/1/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/2/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/2/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/3/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/3/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/4/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/4/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/5/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/5/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/6/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/6/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/7/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/7/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/8/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/8/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/9/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/9/avatar.svg?button=false&isActive=true" height="75px"></a>
-
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/10/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/10/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/11/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/11/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/12/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/12/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/13/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/13/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/14/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/14/avatar.svg?button=false&isActive=true" height="75px"></a>
-<a href="https://opencollective.com/laradock/tiers/gold-sponsors/15/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/gold-sponsors/15/avatar.svg?button=false&isActive=true" height="75px"></a>
-
-</p>
-
-### Silver Sponsors
-
-<p align="center">
-
-<a href="https://veepn.com/vpn-apps/vpn-for-chrome/"  target="_blank"   style="margin-right: 4em"><img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/custom-sponsors/VeePN.png"                height="65px"    alt="VeePN Chrome extension"></a>
-
-
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/0/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/0/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/1/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/1/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/2/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/2/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/3/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/3/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/4/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/4/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/5/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/5/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/6/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/6/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/7/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/7/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/8/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/8/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/9/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/9/avatar.svg?button=false&isActive=true" height="65px"></a>
-
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/10/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/10/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/11/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/11/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/12/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/12/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/13/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/13/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/14/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/14/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/15/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/15/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/16/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/16/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/17/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/17/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/18/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/18/avatar.svg?button=false&isActive=true" height="65px"></a>
-<a href="https://opencollective.com/laradock/tiers/silver-sponsors/19/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/silver-sponsors/19/avatar.svg?button=false&isActive=true" height="65px"></a>
-
-</p>
-
-### Bronze Sponsors
-
-<p align="center">
-
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/0/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/0/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/1/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/1/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/2/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/2/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/3/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/3/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/4/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/4/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/5/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/5/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/6/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/6/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/7/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/7/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/8/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/8/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/9/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/9/avatar.svg?button=false&isActive=true" height="55px"></a>
-
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/10/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/10/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/11/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/11/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/12/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/12/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/13/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/13/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/14/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/14/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/15/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/15/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/16/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/16/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/17/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/17/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/18/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/18/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/19/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/19/avatar.svg?button=false&isActive=true" height="55px"></a>
-
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/20/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/20/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/21/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/21/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/22/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/22/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/23/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/23/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/24/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/24/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/25/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/25/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/26/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/26/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/27/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/27/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/28/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/28/avatar.svg?button=false&isActive=true" height="55px"></a>
-<a href="https://opencollective.com/laradock/tiers/bronze-sponsors/29/website" target="_blank"><img src="https://opencollective.com/laradock/tiers/bronze-sponsors/29/avatar.svg?button=false&isActive=true" height="55px"></a>
-
-</p>
-
-
-You can sponsor us using any of the methods below:
-
-<b>1:</b> Sponsor via [Open Collective](https://opencollective.com/laradock/).
-<br>
-<b>2:</b> Email us at <a href = "mailto: support@laradock.io">support@laradock.io</a>.
-
-*Sponsors logos are displayed on the [github repository](https://github.com/laradock/laradock/) page and the [documentation website](http://laradock.io/) home page.*
-
-## License
-
-[MIT](https://github.com/laradock/laradock/blob/master/LICENSE) © Mahmoud Zalt
-
-
-[comment]: # (Open Collective Tiers)
-
-[contributors-src]: https://opencollective.com/laradock/contributors.svg?width=890&button=false&isActive=true
-[contributors-href]: https://github.com/laradock/laradock/graphs/contributors
-[backers-src]: https://opencollective.com/laradock/tiers/awesome-backers.svg?width=890&button=false&isActive=true
-[backers-href]: https://opencollective.com/laradock#contributors
-
-[gold-sponsors-src]: https://opencollective.com/laradock/tiers/gold-sponsors.svg?avatarHeight=80&width=890&button=false&isActive=true
-[gold-sponsors-href]: https://opencollective.com/laradock#contributors
-[silver-sponsors-src]: https://opencollective.com/laradock/tiers/silver-sponsors.svg?avatarHeight=64&width=890&button=false&isActive=true
-[silver-sponsors-href]: https://opencollective.com/laradock#contributors
-[bronze-sponsors-src]: https://opencollective.com/laradock/tiers/bronze-sponsors.svg?avatarHeight=48&width=890&button=false&isActive=true
-[bronze-sponsors-href]: https://opencollective.com/laradock#contributors
-
-
+## Testing
+```bash
+docker ps # if you see containers running after (server-start) your process is complete.
+```
+## Security
+If you discover any security related issues, please email the [author](stephanesoares11@gmail.com) instead of using the issue tracker.
